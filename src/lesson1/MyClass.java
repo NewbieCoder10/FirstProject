@@ -309,8 +309,6 @@ public class MyClass {
 
    }
 
-    */
-
    // ***** "Static" Examples in a Class *****
 
    public static void main(String[] args){
@@ -323,4 +321,8 @@ public class MyClass {
       //System.out.println(Student.getNoOfStudents());
 
    }
+
+    */
+
+
 }
