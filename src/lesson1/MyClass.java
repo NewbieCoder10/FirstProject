@@ -1,7 +1,5 @@
 package lesson1;
 
-import java.util.Scanner;
-
 public class MyClass {
    /*
 
@@ -225,14 +223,13 @@ public class MyClass {
 
    }
 
-    */
-
-   //***** Parameter Passing *****
+   //***** Parameter Passing && Returning a Value from a method *****
 
    public static void main(String[] args) {
-     sayHello(" Khasiano");
-     sayHello(" Robert");
-     sayHello(" Mom");
+
+     int sum = Divide(500,2, 2);
+     int result = sum * 15;
+     System.out.println(sum);
 
    }
 
@@ -240,5 +237,90 @@ public class MyClass {
       System.out.println("Hey" + name);
    }
 
+   public static int Divide (int a, int b, int c)
+   {
+      //System.out.println(a + b + c);
+      return(a / b / c);
+   }
 
+   // ***** Classes & Objects in Java *****
+
+   public static void main(String[] args) {
+     Student khasiano = new Student(); //khasiano -> object or instance
+
+      khasiano.setId(13);
+      khasiano.setName("Khasiano");
+      khasiano.setAge(23);
+
+      Student Cesar = new Student(); // Cesar -> object or instance
+
+      Cesar.setId(2);
+      Cesar.setName("Cesar");
+      Cesar.setAge(10);
+
+      System.out.println(khasiano.getName() + " is " + khasiano.getAge() + " years old");
+      System.out.println(Cesar.getName() + " is " + Cesar.getAge() + " years old");
+   }
+
+
+   // ***** Class Constructor in Java *****
+
+   public static void main(String[] args){
+      Cube cube = new Cube();
+
+      System.out.println(cube.getCubeVolume());
+
+      Cube cube2 = new Cube(20, 20, 20);
+
+      System.out.println(cube2.getCubeVolume());
+   }
+
+   // ***** Method Overloading *****
+   // Define different Methods with the same name, but performs different logic
+   public static void main(String[] args) {
+      System.out.println(Add(2, 35));
+      System.out.println(Add(22.40, 35.50));
+      System.out.println(Add("Im", " Tired"));
+
+   }
+   public static int Add (int a, int b){
+      return (a + b);
+   }
+   public static double Add (double a, double b){
+      return (a + b);
+   }
+   public static String Add (String a, String b){
+      return (a + b);
+   }
+
+   // ***** "Static && NON - Static" Example in a Class *****
+
+   public static void main(String[] args) {
+      //Static members belong to the class instead of a specific instance.
+      Hey hey = new Hey();
+      Hey.age = 5;
+      System.out.println(Hey.age);
+      //Hey.DoSomething("Learning Java");
+      //hey.DoSomethingElse("Ay Ay");
+
+      Hey hey1 = new Hey();
+      Hey.age = 50;
+      System.out.println(Hey.age);
+
+   }
+
+    */
+
+   // ***** "Static" Examples in a Class *****
+
+   public static void main(String[] args){
+      Student Chey = new Student();
+      System.out.println(Chey.getNoOfStudents());
+
+      Student Sheba = new Student();
+      System.out.println(Sheba.getNoOfStudents());
+
+      //System.out.println(Student.getNoOfStudents());
+
+   }
 }
