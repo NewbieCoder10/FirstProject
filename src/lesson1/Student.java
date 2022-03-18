@@ -17,10 +17,6 @@ public class Student {
     return NoOfStudents;
   }
 
-
-
-
-
   public String getName() {
     return name;
   }

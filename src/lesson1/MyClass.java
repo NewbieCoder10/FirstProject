@@ -1,9 +1,14 @@
 package lesson1;
 
-public class MyClass {
-   /*
+import java.util.Scanner;
 
-   ***** Variables & types in Java *****
+public class MyClass {
+
+
+   // ***** VARIABLES & TYPES IN JAVA *****
+   /*
+   // Variables are names which store Values.
+   //(type, variable name, value)
 
    byte (number, 1 byte)
    short (number, 2 bytes)
@@ -15,19 +20,41 @@ public class MyClass {
    boolean (true or false, 1 byte)
 
   public static void main(String[] args) {
-     short my_variable = 10;
+     byte x = 10;
+     short my_variable2 = 10;
+     int my_variable = 10;
+     long my_long = 314159;
      float my_decimal = (float)4.5;
      double my_double = 11.56;
      char my_char = 'A';
-     boolean is_true = false;
+     boolean is_true = false; // Can store either true or false.
+
+    System.out.println(x);
+    System.out.println(my_variable2);
     System.out.println(my_variable);
+    System.out.println(my_long);
     System.out.println(my_decimal);
     System.out.println(my_double);
     System.out.println(my_char);
     System.out.println(is_true);
   }
+    */
 
-  ***** Getting User input *****
+   // ***** GETTING USER INPUT *****
+   /*
+  // Scanner, is a class, that enables us to take Input
+  // scan, is used as a variable...
+  // = new Scanner...(System.in); allows input from user.
+  // System.out.println("Allows User to enter anything");
+  // String user_input_string = scan.nextLine, allows the next
+  // line to be printed out.
+
+  // The print without ln will keep the line going without,
+  // breaking the line.
+
+  // You can take int, double, string values, anything from the user input.
+  // Just make to put ot with the .next() line.
+
 
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
@@ -37,9 +64,10 @@ public class MyClass {
     System.out.println("The entered string is");
     System.out.print(user_input_string);
   }
+   */
 
-    ***** Math & arithmetic Operators in Java *****
-
+   // ***** Math & arithmetic Operators in Java *****
+   /*
    public static void main(String[] args) {
      int x , y , answer;
      x = 70;
@@ -49,30 +77,30 @@ public class MyClass {
      System.out.println("Answer = " + answer);
    }
 
-
    public static void main(String[] args) {
      int x = 10;
      x /= 5;
      System.out.println(x);
    }
 
-
    if (boolean_expression)
   {
     execute if the boolean expression is true
   }
+    */
 
-    ***** Operators *****
-
+   // ***** INCREMENT OPERATORS & ASSIGNMENT OPERATORS *****
+   /*
    == is equal to
    != is not equal to
    > is greater than
    < is less than
    >= is greater than or equal to
    <= is less than or equal to
+    */
 
-    ***** IF ... Else Statements  (Conditions) *****
-
+   // ***** IF ... Else Statements  (Conditions) *****
+   /*
    public static void main(String[] args) {
      int x = 10;
 
@@ -83,10 +111,10 @@ public class MyClass {
        System.out.println("not equal to 10");
      }
    }
+    */
 
-
-    ***** Logical Operators in Java... && (AND)  || (OR) *****
-
+   // ***** Logical Operators in Java... && (AND)  || (OR) *****
+   /*
    public static void main(String[] args) {
      int subject1 = 20;
      int subject2 = 25;
@@ -98,9 +126,10 @@ public class MyClass {
      }
 
    }
+    */
 
-    ***** Switch Statements *****
-
+   //  ***** Switch Statements *****
+   /*
   public static void main(String[] args) {
     int score = 100;
     // byte, short, int, or char
@@ -121,10 +150,10 @@ public class MyClass {
     }
 
   }
+   */
 
-
-    ***** While Loop *****
-
+   // ***** While Loop *****
+   /*
 
    public static void main(String[] args) {
      int a = 0;
@@ -136,10 +165,10 @@ public class MyClass {
      }
 
    }
+    */
 
-
-    ***** Do - While Loop *****
-
+   // ***** Do - While Loop *****
+   /*
    public static void main(String[] args) {
      int a = 0;
 
@@ -158,10 +187,11 @@ public class MyClass {
      } while (b <= -1);
 
    }
+    */
 
-
-   ***** Arrays *****
-  public static void main(String[] args) {
+   // ***** Arrays *****
+   /*
+   public static void main(String[] args) {
     int[] myintarray = {100, 82, 33, 48, 58};
 
     int index = 0;
@@ -171,9 +201,10 @@ public class MyClass {
 
     }
   }
+    */
 
    // ***** For-Loop *****
-
+   /*
     public static void main(String[] args) {
       int[] myintarray = {100, 75, 50, 25, 0};
 
@@ -188,20 +219,20 @@ public class MyClass {
       {
         System.out.println(myintarray[index]);
       }
+    */
 
-      // ****** Faster Way To Do Arrays *****
-
+   // ****** Faster Way To Do Arrays *****
+   /*
       for(int element : myintarray)
       {
         System.out.println(element);
       }
 
-
-
     }
+    */
 
-   ***** Java Strings *****
-
+   // ***** Java Strings *****
+   /*
    public static void main(String[] args) {
      String myString = "Java Learning";
      int myStringLength = myString.length();
@@ -209,9 +240,10 @@ public class MyClass {
 
      System.out.println(myStringinCase);
    }
+    */
 
-
-   ***** Introduction to Methods *****
+   // ***** Introduction to Methods *****
+   /*
    public static void main(String[] args) {
      myFirstMethod();
    }
@@ -222,9 +254,10 @@ public class MyClass {
      System.out.println("Hello Dad");
 
    }
+    */
 
    //***** Parameter Passing && Returning a Value from a method *****
-
+   /*
    public static void main(String[] args) {
 
      int sum = Divide(500,2, 2);
@@ -261,10 +294,10 @@ public class MyClass {
       System.out.println(khasiano.getName() + " is " + khasiano.getAge() + " years old");
       System.out.println(Cesar.getName() + " is " + Cesar.getAge() + " years old");
    }
-
+    */
 
    // ***** Class Constructor in Java *****
-
+   /*
    public static void main(String[] args){
       Cube cube = new Cube();
 
@@ -274,9 +307,11 @@ public class MyClass {
 
       System.out.println(cube2.getCubeVolume());
    }
+    */
 
    // ***** Method Overloading *****
    // Define different Methods with the same name, but performs different logic
+   /*
    public static void main(String[] args) {
       System.out.println(Add(2, 35));
       System.out.println(Add(22.40, 35.50));
@@ -292,9 +327,10 @@ public class MyClass {
    public static String Add (String a, String b){
       return (a + b);
    }
+    */
 
    // ***** "Static && NON - Static" Example in a Class *****
-
+   /*
    public static void main(String[] args) {
       //Static members belong to the class instead of a specific instance.
       Hey hey = new Hey();
@@ -306,23 +342,25 @@ public class MyClass {
       Hey hey1 = new Hey();
       Hey.age = 50;
       System.out.println(Hey.age);
-
    }
+    */
 
    // ***** "Static" Examples in a Class *****
-
+   /*
    public static void main(String[] args){
       Student Chey = new Student();
       System.out.println(Chey.getNoOfStudents());
 
       Student Sheba = new Student();
       System.out.println(Sheba.getNoOfStudents());
-
-      //System.out.println(Student.getNoOfStudents());
-
    }
-
     */
+
+
+
+
+
+
 
 
 }
